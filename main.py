@@ -11,7 +11,6 @@ def mostrar_menu():
     print("2. Buscar expediente por código")
     print("3. Ordenar expedientes por código")
     print("4. Listar expedientes")
-    print("5. Guardar en archivo")
     print("0. Salir")
 
 
@@ -30,9 +29,6 @@ def main():
             print("Expedientes ordenados por código.")
         elif opcion == "4":
             ordenamiento.listar_expedientes()
-        elif opcion == "5":
-            archivos.guardar_archivo()
-            print("Archivo actualizado.")
         elif opcion == "0":
             archivos.guardar_archivo()
             print("Datos guardados. Hasta pronto.")
