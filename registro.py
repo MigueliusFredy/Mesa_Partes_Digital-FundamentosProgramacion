@@ -1,7 +1,3 @@
-"""Módulo de registro de expedientes."""
-import datos
-import validaciones
-
 
 def generar_codigo(numero):
     """Ejemplo: 7 -> 'EXP-0007'."""
@@ -26,16 +22,4 @@ def registrar_expediente(dni, nombre, tipo, asunto, correo, fecha):
     return codigo
 
 
-def pedir_y_registrar():
-    """Pide los datos por teclado y llama a registrar_expediente()."""
-    dni = input("DNI (8 dígitos): ")
-    nombre = input("Nombre completo: ")
-    tipo = input("Tipo de trámite: ")
-    asunto = input("Asunto: ")
-    correo = input("Correo electrónico: ")
-    fecha = input("Fecha de registro (DD/MM/AAAA): ")
-    codigo = registrar_expediente(dni, nombre, tipo, asunto, correo, fecha)
-    if codigo is None:
-        print("Datos inválidos. El expediente no fue registrado.")
-    else:
-        print("Expediente registrado. Código de seguimiento:", codigo)
+
